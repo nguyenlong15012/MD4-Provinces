@@ -120,20 +120,5 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         return new ProvinceService();
     }
 
-//    @Bean
-//    public IBlogRepository customerRepository() {
-//
-//        return new BlogRepository();
-//    }
-//
-//    @Bean
-//    public IBlogService customerService() {
-//
-//        return new BlogService();
-//    }
-//
-//    @Override
-//    public void addFormatters(FormatterRegistry registry){
-//        registry.addFormatter(new ProvinceFormatter(applicationContext.getBean(ProvinceService.class)));
-//    }
+
 }

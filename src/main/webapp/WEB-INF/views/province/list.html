@@ -9,6 +9,8 @@
 <div th:each="pro : ${province}">
     <span th:text="${pro.name}"></span>
     <span th:text="${pro.description}"></span>
+
+    <a th:href="@{/provinces/edit/__${pro.id}__}">Edit</a>
 </div>
 </body>
 </html>

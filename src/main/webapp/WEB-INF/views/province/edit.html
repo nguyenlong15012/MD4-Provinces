@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/provinces}">
+    Back to list province
+</a>
+<form action="" method="post">
+    <input type="hidden" th:value="pro.id">
+    <input type="text" name="name" th:value="${pro.name}">
+    <input type="text" name="description" th:value="${pro.description}">
+    <button>Edit</button>
+</form>
+</body>
+</html>
