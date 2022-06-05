@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/provinces/create">Create new Province</a>
+<div th:each="pro : ${province}">
+    <span th:text="${pro.name}"></span>
+    <span th:text="${pro.description}"></span>
+</div>
+</body>
+</html>
